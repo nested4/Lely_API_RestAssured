@@ -20,6 +20,9 @@ public class GoRestEndPointsTests {
         RestAssured.baseURI = BASE_URL;
     }
 
+    /**
+     * In gorest.co.in ID Values are 7 Digits now, in task it says 4. I have updated the task as 7 digits.
+     */
     @Test
     public void testIdValuesAreSevenDigitIntegersAndNotNull() {
         Response response = given()
@@ -44,7 +47,7 @@ public class GoRestEndPointsTests {
     @Test
     public void testCreateUser() {
         //Change the email to create a new user succesfully
-        String email = "umut200@gmail.com";
+        String email = "umut300@gmail.com";
         String name = "test";
         String gender = "male";
         String status = "active";
@@ -72,7 +75,7 @@ public class GoRestEndPointsTests {
 
     @Test
     public void testDuplicateUserCreation() {
-        String email = "umut200@gmail.com";
+        String email = "umut300@gmail.com";
         String name = "test";
         String gender = "male";
         String status = "active";

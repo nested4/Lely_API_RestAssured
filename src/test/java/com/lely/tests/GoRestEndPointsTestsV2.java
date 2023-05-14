@@ -21,6 +21,9 @@ public class GoRestEndPointsTestsV2 {
         RestAssured.baseURI = BASE_URL;
     }
 
+    /**
+     * In gorest.co.in ID Values are 7 Digits now, in task it says 4. I have updated the task as 7 digits.
+     */
     @Test
     public void testIdValuesAreSevenDigitIntegersAndNotNull() {
         Response response = given()
