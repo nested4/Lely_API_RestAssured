@@ -47,7 +47,7 @@ public class GoRestEndPointsTests {
     @Test
     public void testCreateUser() {
         //Change the email to create a new user succesfully
-        String email = "umut300@gmail.com";
+        String email = "umut400@gmail.com";
         String name = "test";
         String gender = "male";
         String status = "active";
@@ -75,7 +75,7 @@ public class GoRestEndPointsTests {
 
     @Test
     public void testDuplicateUserCreation() {
-        String email = "umut300@gmail.com";
+        String email = "umut400@gmail.com";
         String name = "test";
         String gender = "male";
         String status = "active";
